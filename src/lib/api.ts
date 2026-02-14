@@ -57,8 +57,8 @@ export async function sendChatMessage(
 // ─── Streaming Chat WebSocket ───
 
 export function createChatStream(
-  config: AgentConfig,
-  sessionId: string,
+  _config: AgentConfig,
+  _sessionId: string,
   onChunk: (content: string) => void,
   onDone: () => void,
   onError: (error: string) => void,

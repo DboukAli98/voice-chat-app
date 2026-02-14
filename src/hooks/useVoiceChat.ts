@@ -89,7 +89,7 @@ export function useVoiceChat() {
         RoomEvent.TrackSubscribed,
         (
           track: RemoteTrack,
-          publication: RemoteTrackPublication,
+          _publication: RemoteTrackPublication,
           participant: RemoteParticipant,
         ) => {
           if (track.kind === Track.Kind.Audio) {
